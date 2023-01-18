@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>deinGarten.ch</title>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+
+    <body>
+
+        <div class="body-container">
+
+            <header>
+
+                <div class="container-header">
+
+                    <a class="Logo" href="/start.html">
+                        <img class="logo-bild" src="img/dein_garten_logo.png" alt="Logo deinGarten">
+                    </a>
+
+                    <h1>Hallo <span id="username"> </span></h1>
+
+                    <nav class="container-header">
+
+                        <a class="button" id="neuerGarten" href="/garten.html">Mein Garten</a>
+
+                        <a class="button" id="logout" onclick="logout()"> Logout </a>
+
+                    </nav>
+
+                </div>
+
+            </header>
+
+            <div class="mainBody">
+
+                <div class="grid-container">
+
+                    <div class="gartenbox-container" id="liste-garten">
+                        <!-- Hier werden alle Gaerten geladen -->
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    <script src="js/script.js"></script>
+
+    </body>
+
+</html>

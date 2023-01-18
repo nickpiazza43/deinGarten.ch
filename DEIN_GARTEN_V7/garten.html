@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mein Garten</title>
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+
+    <body>    
+        
+        <div class="body-container-garten">
+
+            <header>
+
+                <div class="container-header">
+
+                    <a class="Logo" href="/start.html">
+                        <img class="logo-bild" src="img/dein_garten_logo.png" alt="Logo deinGarten">   
+                    </a>
+
+                    <nav class="container-header">
+
+                        <a class="button" id="alleGaerten" href="start.html">Alle Gärten</a>
+
+                        <a class="button" id="logout" onclick="logout()">Logout</a>
+
+                    </nav>
+
+                </div> 
+
+            </header>
+
+        </div>
+
+        <div class="garten-container" >
+            
+            <form id="meinGarten">
+                <h1 id="infoText"> </h1> <br>
+
+                <label for="titel">Titel:</label> <br>
+                <input id="titel" type="text" value="" placeholder="Titel deines Gartens" required> <br>
+
+                <label for="adresse">Adresse:</label> <br>
+                <input id="adresse" type="text" value="" placeholder="Adresse" required> <br>
+
+                <label for="bild">Bild URL:</label> <br>
+                <a target="_blank" href="https://thishousedoesnotexist.org/">z.B. von thishousedoesnotexist.org</a> <br>
+                <input id="bild" type="url" value="" placeholder="Bild-URL"> <br>
+                <img id="bild-vorschau" width="300px" src="" alt=""> <br> <br>
+                
+
+                <label for="beschreibung">Beschreibung:</label>
+                <textarea id="beschreibung" name="beschreibung" required> </textarea> <br>
+                
+                
+
+                <label for="mietdauer">Mietdauer:</label> <br>
+                <select class="dropdown" name="mietdauer" id="mietdauer">
+                    <option value="1">3 Monate</option>
+                    <option value="2">6 Monate</option>
+                    <option value="3">9 Monate</option>
+                    <option value="4">1 Jahr</option>
+                </select> <br>
+
+                <label for="preis">Preis in CHF:</label>
+                <input id="preis" type="text" value="" placeholder="Preis"> <br>
+
+                <label for="ausstattungen">Vorhandene Ausstattung:</label>
+                <div id="ausstattungen">
+                    <!-- Ausstattungen -->
+                </div> <br>
+
+                <p class="status-p">Status:</p>
+                <div class="status-container">
+                    <label for="status-frei">Verfügbar</label>
+                    <input type="radio" id="status-frei" name="status" value="1">
+                    
+                    <label for="status-besetzt">Nicht Verfügbar</label>
+                    <input type="radio" id="status-besetzt" name="status" value="0">
+                </div> <br>
+
+                <button class="hidden" id="button-neue" onclick="neuerGarten()">Veröffentlichen</button>
+                <button class="hidden" id="button-aktualisieren" onclick="aktualisiereGarten()">Aktualisieren</button>
+                <button class="hidden" id="button-loeschen" onclick="loescheGarten()">Löschen</button>
+
+                <p id="nachricht"> </p>
+
+            </form>
+        </div>
+
+    <script src="js/garten.js"></script>
+
+    </body>
+
+</html>

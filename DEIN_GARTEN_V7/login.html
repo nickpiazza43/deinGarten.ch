@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login deinGarten.ch</title>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+
+    <body>
+
+        <header>
+
+            <div class="container-header">
+
+                <a class="Logo" href="/">
+                    <img class="logo-bild" src="img/dein_garten_logo.png" alt="Logo deinGarten">
+                </a>
+
+            </div>
+
+        </header>
+
+        <main class="form__wrapper">
+
+            <div class="form__container">
+
+                <h1>Login</h1>
+               
+                <div class="input__wrapper">
+                    <input type="email" id="email" placeholder="E-Mail" required> <br>
+                </div>
+
+                <div class="input__wrapper">
+                    <input type="password" id="password" placeholder="Passwort" required> <br>
+                </div>
+
+                <button type="submit" onclick="login()">Login</button> 
+               
+
+                <br>
+
+                <a class="buttonfill" href="index.html">Zurück zur Startseite</a>
+
+                <p id="nachricht" class="alert"></p>
+
+            </div>
+
+        </main>
+
+    <script src="js/login.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,756 @@
+html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.body-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:center;
+    margin-bottom: 100px;
+} 
+
+/* Typo ****************************************************************************** */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin: 0;
+}
+
+h2{
+    text-align: left;
+    font: normal normal bold 16px/19px Helvetica Neue, Arial;
+    letter-spacing: 0px;
+    color: #707070;
+    margin: 0;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+p{
+    text-align: left;
+    font-family: 'Noto Sans'; font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: #737373;
+    margin: 0;
+}
+
+a{
+    
+    font-family: 'Noto Sans'; font-size: 16px;
+    font-weight: 300;
+    color: #1B7EFF;
+    margin: 0;
+    text-decoration: none;
+
+}
+
+p.verfuegbarkeit{
+    font-size: small;
+    font-weight: 100;
+}
+
+h2.inseratTitel{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+/* header ****************************************************************************** */
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    position: fixed;
+    z-index: 1000;
+
+    width: 100%;
+
+    background: #F3F3F3 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+div.container-header{
+    width: 80%;
+    max-width: 1640px;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* a.Logo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: fit-content;
+} */
+
+.Logo {
+    width: 20%;
+}
+
+.Logo img{
+width: 100%;
+}
+
+.container-header nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    
+}
+
+a.button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+
+    margin: 0 13px 0 6px;
+    text-align: right;
+    font: normal normal normal 20px/27px Noto Sans;
+    letter-spacing: 0px;
+    color: #1C2126;
+    opacity: 1;
+
+    text-decoration: none;
+  }
+
+  a.button:hover{
+    text-decoration: underline;
+  }
+
+
+/* Body ****************************************************************************** */
+
+div.mainBody {
+    margin-top: 150px;
+    width: 100%;
+    max-width: 1640px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.grid-container{
+    width: 70%;
+    display: flex;
+    
+}
+
+.gartenbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+.gartenbox-container div{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 32%;
+}
+
+div.garten{
+    box-sizing: border-box;
+    /*border: 3px solid #1C2126;*/
+    background-color: #efefef;
+    padding: 20px;
+    border-radius: 4px;
+
+    -webkit-box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.15); 
+    box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.15);
+}
+
+img.garten-image{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.inseratTitel {
+margin-top: 20px;
+}
+
+.garten p {
+    padding: 10px 0px;
+}
+
+/*
+p.beschreibung{
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+*/
+
+.buttonfill{
+ 
+  background-color: #222;
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  max-width: none;
+  min-height: 44px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.buttonfill:hover,
+.buttonfill:focus {
+  opacity: .75;
+}
+
+/* Footer ****************************************************************************** */
+
+div.footer{
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    
+    
+    width: 100%;
+
+    background: #F3F3F3 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+}
+
+
+/* index.html ****************************************************************************** */
+
+
+.width-container{
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+} 
+
+.inner-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.info-container, .cta-container {
+    width: 80%;
+    max-width: 1640px;
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    
+}
+
+.box1, .box2 {
+    padding: 20px 40px 40px 40px;
+    background-color: #efefef;
+    border-radius: 4px;
+    width: 50%;
+
+    -webkit-box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.15); 
+    box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.15);
+}
+
+.box3, .box4 {
+    width: 50%;
+    
+}
+
+.box1 p, .box2 p {
+    margin-top: 20px;
+}
+
+.box3 a, .box4 a {
+    margin-top: 20px;
+    -webkit-box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.15); 
+    box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.15);
+}
+
+/* garten.html ****************************************************************************** */
+
+ .body-container-garten{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+} 
+
+.garten-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+#meinGarten {
+    margin-top: 150px;
+    width: 40%;
+    max-width: 1640px;
+}
+
+.formular-container {
+    width: 100%;
+}
+
+.dropdown{
+
+    margin: 10px;  
+}
+
+.flex {
+
+    display: flex;
+}
+
+.hidden {
+
+    display: none;
+
+}
+
+#meinGarten input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem 1rem;
+    margin: 0;
+    border-radius: 4px;
+    border: solid 1px #1C2126;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+    font-family: 'Noto Sans'; 
+    font-size: 14px!important;
+    font-weight: 100;
+
+    -webkit-box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.15); 
+    box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.15);
+}
+
+#meinGarten textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem 1rem;
+    margin: 0;
+    border-radius: 4px;
+    border: solid 1px #1C2126;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+    font-family: 'Noto Sans'; 
+    font-size: 14px!important;
+    font-weight: 100;
+
+    -webkit-box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.15); 
+    box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.15);
+}
+
+#meinGarten .dropdown {
+    padding: 1rem 1rem;
+    border-radius: 4px;
+    margin: 0;
+    border: solid 1px #1C2126;
+    margin-bottom: 40px;
+    margin-top: 10px;
+
+    font-family: 'Noto Sans'; 
+    font-size: 14px!important;
+    font-weight: 100;
+
+    -webkit-box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.15); 
+    box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.15);
+}
+
+
+#meinGarten label {
+    padding: 0;
+    text-align: left;
+    font-family: 'Noto Sans'; 
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    color: #000000;
+    margin-top: 15px;
+
+    
+}
+
+#meinGarten button {
+    width: fit-content;
+    margin: 0;
+    padding: 1rem 2rem;
+    background-color: #1C2126;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 4px;
+    border:#1C2126;
+    cursor: pointer;
+
+    -webkit-box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.15); 
+    box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.15);
+}
+
+#ausstattungen {
+    margin-top: 10px;
+}
+
+.status-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.status-container label {
+    margin-top: 20px;
+    font-family: 'Noto Sans'; 
+    font-size: 14px!important;
+    font-weight: 100;
+}
+
+.status-p {
+    font-family: 'Noto Sans'; 
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    color: #000000;
+    margin-top: 40px;
+}
+
+#status-frei, #status-besetzt {
+width: fit-content!important;
+
+}
+
+.ausstattung:hover{
+    text-decoration: underline;
+}
+
+/* login.html, registrieren.html ****************************************************************************** */
+
+.form__wrapper {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 40%;
+}
+
+/*
+@media (min-width: 780px) {
+    .form__container {
+        width: 80%;
+    }
+} */
+
+.form__container input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem 1rem;
+    margin: 0;
+    border-radius: 4px;
+    border: solid 1px #1C2126;
+}
+
+.form__container label {
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.form__container button {
+    width: 100%;
+    margin: 0;
+    padding: 1rem 2rem;
+    background-color: #1C2126;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    border:#1C2126;
+    cursor: pointer;
+}
+
+.form__container button:hover {
+   opacity: 0.75;
+}
+
+#regButtons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.form__container .buttonfill {
+    
+    padding: 2px;
+    
+    width: fit-content;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+}
+
+.form__container .buttonfill:hover {
+    
+ text-decoration: underline;
+}
+
+
+#nachricht {
+ color: red;   
+}
+
+#nachricht .buttonfill{
+    padding: 2px;
+    
+    width: fit-content;
+    color: green;
+    background-color: rgb(255, 255, 255);
+   
+}
+
+/**********************************/
+/**********************************/
+/*Responsive*/
+/**********************************/
+/**********************************/
+
+@media only screen and (max-width: 1400px) {
+
+    .gartenbox-container {
+        gap: 2%;
+    }
+
+    .gartenbox-container div{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 49%;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .gartenbox-container {
+        gap: 0;
+    }
+    
+    .gartenbox-container div{
+        flex-basis: 100%;
+    }
+    
+    .garten {
+        margin-bottom: 20px;
+    }
+    
+    .body-container-garten {
+        justify-content: flex-start;
+    }
+    
+    
+    
+    #meinGarten {
+        width: 80%;
+    }
+    
+    h1{
+        font-size: 24px;
+    }
+
+    .info-container, .cta-container {
+        flex-direction: column;
+
+    }
+
+    .box1, .box2 {
+        width: 80%;
+    }
+    
+    .box3, .box4 {
+        width: 80%;
+        
+    }
+
+
+    .form__container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 80%;
+    }
+
+    .width-container{
+        margin-top: 100px;
+    } 
+
+    div.mainBody {
+        margin-top: 100px;
+    }
+
+    #meinGarten {
+        margin-top: 100px;
+    
+      
+    }
+
+    .container-header h1 {
+        font-size: 12px!important;
+
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    header a{
+        font-size: 12px!important;
+    }
+
+    
+}
+
+/* CSS alt ****************************************************************************** */
+
+
+/* html {
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+h1 {
+
+    font-size: 40px;
+    color: #32b93f;
+
+}
+
+.title{
+
+    text-align: center;
+}
+
+a {
+
+    color: rgb(5, 72, 100);
+}
+
+input {
+    margin: 10px;
+}
+
+textarea {
+    margin: 10px;
+    width: 50%;
+}
+
+button {
+
+    margin: 10px;
+
+}
+
+.dropdown{
+
+    margin: 10px;  
+}
+
+.garten {
+
+    border: 2px solid rgb(28, 157, 16);
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.garten-image {
+
+    width: 50%;
+}
+
+#liste-garten {
+
+    width: 50%;
+    margin: auto;
+
+}
+
+nav {
+    text-align: right;
+}
+
+button {
+    background-color: #4c86af;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.flex {
+
+    display: flex;
+}
+
+.container-header {
+
+    width: 33%;
+}*/
+
